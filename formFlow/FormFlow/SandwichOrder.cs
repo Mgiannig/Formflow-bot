@@ -30,12 +30,11 @@ namespace formFlow.FormFlow
             Avocado, BananaPeppers, Cucumbers, GreenBellPeppers, Jalapenos,
             Lettuce, Olives, Pickles, RedOnion, Spinach, Tomatoes
         }
-
         public enum SauceOptions
         {
             ChipotleSouthwest, HoneyMustard, LightMayonnaise, RegularMayonnaise,
             Mustard, Oil, Pepper, Ranch, SweetOnion, Vinegar
-        }
+        };
 
         public static IForm<SandwichOrder> BuildForm()
         {

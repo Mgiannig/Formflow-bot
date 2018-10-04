@@ -18,7 +18,7 @@ namespace formFlow
         {
             if (activity != null && activity.GetActivityType() == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => { return Chain.From(() => FormDialog.FromForm(SandwichOrder.BuildForm)); });
+                await Conversation.SendAsync(activity, () => { return Chain.From(() => FormDialog.FromForm(Enquiry.BuildEnquiryForm)); });
             }
 
             var response = Request.CreateResponse(HttpStatusCode.OK);
